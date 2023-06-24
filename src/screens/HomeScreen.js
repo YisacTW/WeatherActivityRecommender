@@ -8,7 +8,7 @@ const HomeScreen = () => {
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
-        const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=London&appid=6a1eab9f0fb5202f6de1077770c83e8f`);
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=London&appid=6a1eab9f0fb5202f6de1077770c83e8f`);
         setWeatherData(response.data);
       } catch (error) {
         console.error(error);
