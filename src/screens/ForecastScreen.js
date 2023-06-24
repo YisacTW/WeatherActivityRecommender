@@ -8,7 +8,7 @@ const ForecastScreen = () => {
   useEffect(() => {
     const fetchForecastData = async () => {
       try {
-        const response = await axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=London&appid=YOUR_API_KEY`);
+        const response = await axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=London&appid=6a1eab9f0fb5202f6de1077770c83e8f`);
         setForecastData(response.data.list);
       } catch (error) {
         console.error(error);
